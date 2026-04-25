@@ -20,7 +20,7 @@ LevelManager="*res://Scripts/LevelManager.cs"
 
 [dotnet]
 
-project/assembly_name="Crossy Road"
+project/assembly_name="BewareTheDark"
 
 [input]
 
