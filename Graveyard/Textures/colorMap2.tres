@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dqyc2vuah8k2l"]
+
+[ext_resource type="Texture2D" uid="uid://bil5uxs53ofkl" path="res://Graveyard/Textures/colormap.png" id="1_rewqg"]
+
+[resource]
+albedo_texture = ExtResource("1_rewqg")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 3.0
+emission_operator = 1

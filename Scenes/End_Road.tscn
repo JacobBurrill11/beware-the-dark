@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2ak3kf8r64j5"]
+
+[ext_resource type="PackedScene" uid="uid://dc0qcg70ngjgv" path="res://Graveyard/road.glb" id="1_j2qul"]
+[ext_resource type="Script" path="res://Scripts/EndRoad.cs" id="2_5o3da"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ysarh"]
+size = Vector3(0.25, 1, 0.25)
+
+[node name="road" instance=ExtResource("1_j2qul")]
+collision_mask = 2
+script = ExtResource("2_5o3da")
+NextLevelPath = "res://Scenes/EndScreen.tscn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00349241, 0.54547, 0.00516582)
+shape = SubResource("BoxShape3D_ysarh")
+
+[connection signal="body_entered" from="." to="." method="Complete"]

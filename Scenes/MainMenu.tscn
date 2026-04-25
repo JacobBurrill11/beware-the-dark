@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvcugseb6c1h6"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.cs" id="1_8hxii"]
+[ext_resource type="AudioStream" uid="uid://c2ypm8bg66uu0" path="res://Audio/Safehouse1.wav" id="2_cmsnu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c8vlg"]
+font_size = 33
+
+[sub_resource type="LabelSettings" id="LabelSettings_0n0ge"]
+font_size = 115
+font_color = Color(0.540575, 0, 0.077395, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hrdvx"]
+font_size = 22
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8hxii")
+LevelOnePath = "res://Scenes/Level1.tscn"
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.5
+offset_top = -25.0
+offset_right = 53.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Play"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -23.0
+offset_right = 33.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_c8vlg")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -536.0
+offset_top = 120.0
+offset_right = 541.0
+offset_bottom = 277.0
+grow_horizontal = 2
+text = "BEWARE THE DARK!"
+label_settings = SubResource("LabelSettings_0n0ge")
+
+[node name="Description" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -312.0
+offset_top = -200.0
+offset_right = 308.0
+offset_bottom = -177.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Explore the darkness to find the final alter and ollect lanterns to expand your light! Watch Out for Ghosts!"
+label_settings = SubResource("LabelSettings_hrdvx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cmsnu")
+autoplay = true
+
+[connection signal="pressed" from="Play" to="." method="Start"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3bkm4s5y6u7u"]
+
+[ext_resource type="PackedScene" uid="uid://cdxr3s0qnvpxm" path="res://Graveyard/lantern-glass.glb" id="1_dac14"]
+[ext_resource type="Script" path="res://Scripts/LanternGlass.cs" id="2_nl54d"]
+[ext_resource type="Material" uid="uid://dqyc2vuah8k2l" path="res://Graveyard/Textures/colorMap2.tres" id="3_rmyu8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_40y7o"]
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="lantern-glass" groups=["lanterns"] instance=ExtResource("1_dac14")]
+collision_mask = 10
+script = ExtResource("2_nl54d")
+
+[node name="lantern-glass" parent="." index="0"]
+surface_material_override/0 = ExtResource("3_rmyu8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.136643, 0)
+shape = SubResource("BoxShape3D_40y7o")
+
+[connection signal="body_entered" from="." to="." method="Collected"]

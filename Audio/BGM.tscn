@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhx3t0cou6tcj"]
+
+[ext_resource type="AudioStream" uid="uid://da0vol0loochr" path="res://Audio/Atmosphere8.wav" id="1_l6wgg"]
+
+[node name="Bgm" type="AudioStreamPlayer"]
+stream = ExtResource("1_l6wgg")
+autoplay = true

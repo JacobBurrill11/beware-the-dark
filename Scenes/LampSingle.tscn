@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dquvkjb3rbsdr"]
+
+[ext_resource type="PackedScene" uid="uid://dlq1ni0ll62yh" path="res://Graveyard/lightpost-single.glb" id="1_06skq"]
+
+[node name="lightpost-single2" instance=ExtResource("1_06skq")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.889292, 0.237848)
+light_energy = 0.3

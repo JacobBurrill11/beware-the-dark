@@ -1,0 +1,119 @@
+[gd_scene load_steps=30 format=3 uid="uid://dfuowqm5p7q5q"]
+
+[ext_resource type="PackedScene" uid="uid://ciaxclmk0sciq" path="res://Ground/ground_grass.glb" id="1_mgnll"]
+[ext_resource type="PackedScene" uid="uid://dxiv1aack1she" path="res://Ground/ground_pathBend.glb" id="2_bu6yw"]
+[ext_resource type="PackedScene" uid="uid://hxobn5ws5uq" path="res://Ground/ground_pathEnd.glb" id="2_em22o"]
+[ext_resource type="PackedScene" uid="uid://dgbd5tuciem2c" path="res://Ground/ground_pathCorner.glb" id="3_2vdjj"]
+[ext_resource type="PackedScene" uid="uid://dfpo5iea5tmfv" path="res://Ground/ground_pathBendBank.glb" id="3_jqrt4"]
+[ext_resource type="PackedScene" uid="uid://ud70c3gte82t" path="res://Ground/ground_pathEndClosed.glb" id="4_2n62y"]
+[ext_resource type="PackedScene" uid="uid://dqfkkrmuh0177" path="res://Ground/ground_pathCornerSmall.glb" id="5_2k5ae"]
+[ext_resource type="PackedScene" uid="uid://c41lg1cmrv5p1" path="res://Ground/ground_pathOpen.glb" id="5_kcq74"]
+[ext_resource type="PackedScene" uid="uid://bws1a8cls21vm" path="res://Ground/ground_pathCross.glb" id="6_eled8"]
+[ext_resource type="PackedScene" uid="uid://cd72bd03qr0y" path="res://Ground/ground_pathRocks.glb" id="6_jx0yr"]
+[ext_resource type="PackedScene" uid="uid://dumfit82ae33f" path="res://Ground/ground_pathSide.glb" id="7_qiymp"]
+[ext_resource type="PackedScene" uid="uid://cv85i1cm0os3h" path="res://Ground/ground_pathSideOpen.glb" id="8_rp6lr"]
+[ext_resource type="PackedScene" uid="uid://chcceh4g8sphw" path="res://Ground/ground_pathSplit.glb" id="9_5lly3"]
+[ext_resource type="PackedScene" uid="uid://rei88y3we8py" path="res://Ground/ground_pathStraight.glb" id="10_ybbpa"]
+[ext_resource type="PackedScene" uid="uid://c4mgq7xmny0ij" path="res://Ground/ground_pathTile.glb" id="11_g8oaw"]
+[ext_resource type="PackedScene" uid="uid://bo5hisjdgq73l" path="res://Ground/ground_riverBend.glb" id="12_fy0tw"]
+[ext_resource type="PackedScene" uid="uid://ci8063d8bkagi" path="res://Ground/ground_riverOpen.glb" id="13_te0v4"]
+[ext_resource type="PackedScene" uid="uid://dm84vfcj6hwq" path="res://Ground/ground_riverSide.glb" id="14_36qsp"]
+[ext_resource type="PackedScene" uid="uid://b0cr78vgs7nvd" path="res://Ground/ground_riverRocks.glb" id="15_ga8gt"]
+[ext_resource type="PackedScene" uid="uid://lycdkioxi4lw" path="res://Ground/ground_riverSideOpen.glb" id="16_jmh7y"]
+[ext_resource type="PackedScene" uid="uid://u6pkg2084h36" path="res://Ground/ground_riverTile.glb" id="17_np3f8"]
+[ext_resource type="PackedScene" uid="uid://d2kiybwe2xg0s" path="res://Ground/ground_riverBendBank.glb" id="17_w7j4t"]
+[ext_resource type="PackedScene" uid="uid://cgeugjyb6xphg" path="res://Ground/ground_riverCorner.glb" id="18_t44jp"]
+[ext_resource type="PackedScene" uid="uid://blundlcgrb2b4" path="res://Ground/ground_riverCornerSmall.glb" id="19_xcfsj"]
+[ext_resource type="PackedScene" uid="uid://ba3a5x1gdippd" path="res://Ground/ground_riverCross.glb" id="20_y83qy"]
+[ext_resource type="PackedScene" uid="uid://dc8sy6bx7lr7s" path="res://Ground/ground_riverEnd.glb" id="21_0d46b"]
+[ext_resource type="PackedScene" uid="uid://n33ioxa6i2nj" path="res://Ground/ground_riverEndClosed.glb" id="22_oqnua"]
+[ext_resource type="PackedScene" uid="uid://cydw175kskjpq" path="res://Ground/ground_riverSplit.glb" id="27_18yqj"]
+[ext_resource type="PackedScene" uid="uid://b7yc6md4tgwsg" path="res://Ground/ground_riverStraight.glb" id="28_vh57u"]
+
+[node name="Library" type="Node3D"]
+
+[node name="ground_grass2" parent="." instance=ExtResource("1_mgnll")]
+
+[node name="ground_pathBend2" parent="." instance=ExtResource("2_bu6yw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathBendBank2" parent="." instance=ExtResource("3_jqrt4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathCorner2" parent="." instance=ExtResource("3_2vdjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathCornerSmall2" parent="." instance=ExtResource("5_2k5ae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathCross2" parent="." instance=ExtResource("6_eled8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathEnd2" parent="." instance=ExtResource("2_em22o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathEndClosed2" parent="." instance=ExtResource("4_2n62y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathOpen2" parent="." instance=ExtResource("5_kcq74")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathRocks2" parent="." instance=ExtResource("6_jx0yr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathSide2" parent="." instance=ExtResource("7_qiymp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathSideOpen2" parent="." instance=ExtResource("8_rp6lr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathSplit2" parent="." instance=ExtResource("9_5lly3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathStraight2" parent="." instance=ExtResource("10_ybbpa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_pathTile2" parent="." instance=ExtResource("11_g8oaw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverBend2" parent="." instance=ExtResource("12_fy0tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverBendBank2" parent="." instance=ExtResource("17_w7j4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverCorner2" parent="." instance=ExtResource("18_t44jp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverCornerSmall2" parent="." instance=ExtResource("19_xcfsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverCross2" parent="." instance=ExtResource("20_y83qy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverEnd2" parent="." instance=ExtResource("21_0d46b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverEndClosed2" parent="." instance=ExtResource("22_oqnua")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverOpen2" parent="." instance=ExtResource("13_te0v4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverRocks2" parent="." instance=ExtResource("15_ga8gt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverSide2" parent="." instance=ExtResource("14_36qsp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverSideOpen2" parent="." instance=ExtResource("16_jmh7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverSplit2" parent="." instance=ExtResource("27_18yqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverStraight2" parent="." instance=ExtResource("28_vh57u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="ground_riverTile2" parent="." instance=ExtResource("17_np3f8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)

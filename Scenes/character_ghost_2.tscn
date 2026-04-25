@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfq1w3va6ptsc"]
+
+[ext_resource type="PackedScene" uid="uid://jvv648qkmuj8" path="res://Graveyard/character-ghost.glb" id="1_vmi7q"]
+[ext_resource type="Script" path="res://Scripts/Ghost.cs" id="2_v3e4y"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yquuw"]
+radius = 0.25
+height = 0.75
+
+[node name="character-ghost2" instance=ExtResource("1_vmi7q")]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("2_v3e4y")
+SPEED = 1.0
+ATTACKRANGE = 6.0
+
+[node name="arm-left" parent="character-ghost/root/torso" index="0"]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, 0.15, 0.225, 0.0025)
+
+[node name="arm-right" parent="character-ghost/root/torso" index="1"]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, -0.15, 0.225, 0.0025)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.417667, 0)
+shape = SubResource("CapsuleShape3D_yquuw")
